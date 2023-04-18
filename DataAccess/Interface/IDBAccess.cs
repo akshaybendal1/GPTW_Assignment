@@ -11,5 +11,8 @@ namespace DataAccess.Interface
     public interface IDBAccess
     {
         Task<List<QuestionData>> GetData();
+        Task saveData(QuestionData data);
+        Task<List<ScoreCount>> GetCountData();
+        Task<List<QuestionData>> GetData(List<int> QuestionIds);
     }
 }

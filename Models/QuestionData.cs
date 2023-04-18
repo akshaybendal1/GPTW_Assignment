@@ -13,4 +13,9 @@ namespace Models
         public string QuestionText { get; set; }
         public int Score { get; set; }
     }
+    public class ScoreCount
+    {
+        public int Score { get; set; }
+        public int Count { get; set; }
+    }
 }

@@ -10,6 +10,11 @@ namespace BusinessLogic.Interface
 {
     public interface ILogic
     {
-        List<QuestionData> GetData();
+        Task<List<QuestionData>> GetData();
+        Task saveData(QuestionData data);
+
+        Task<double> getCountData();
+
+        Task<List<QuestionData>> GetData(List<int> QuestionIds);
     }
 }
